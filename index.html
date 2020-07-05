@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Compiled and minified CSS -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<title>UCI Eats</title>
+</head>
+<body>
+<header><img src="assets/images/ucieats_logo.jpg"><img src="assets/images/ucieats_name.jpg"></header>
+  <br>
+  <div class="container">
+<!-- Choices Expandable -->
+    <ul class="collapsible expandable">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">add_circle</i>MAKE YOUR CHOICES</div>
+        <div class="collapsible-body"><span>
+            <div class="row">
+              <div class="col s12" id="filter">
+                <div class="container">
+                  <br>
+                  <label for="planDate"><i class="material-icons">date_range</i>The Fun Day</label>
+                  <input type="text" class="datepicker" id="planDate">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="input-field col s12" id="ArtsAndEntertainment">
+                    <select multiple id="mArtsAndEntertainment">
+                      <option value="" disabled selected>Arts and Entertainment</option>
+                    </select>
+                    <label>Arts and Entertainment</label>
+                  </div>
+
+                  <div class="input-field col s12 m12" id="Events">
+                    <select multiple id="mEvents">
+                      <option value="" disabled selected>Events</option>
+                    </select>
+                    <label>Events</label>
+                  </div>
+
+                  <div class="input-field col s12 m12" id="ShopAndService">
+                    <select multiple id="mShopAndService">
+                      <option value="" disabled selected>Shop and Service</option>
+                    </select>
+                    <label>Shop & Service</label>
+                  </div>
+
+                  <div class="input-field col s12" id="OutdoorsAndRecreation">
+                    <select multiple id="mOutdoorsAndRecreation">
+                      <option value="" disabled selected>Outdoors & Recreation</option>
+                    </select>
+                    <label>Outdoor & Recreation</label>
+                  </div>
+                </div>
+
+                      <div class="input-field col s12" id="FoodOptions">
+                        <select multiple id="mFoodOptions">
+                          <option value="" disabled selected>Food Options</option>
+                        </select>
+                        <label>Food Options</label>
+                      </div>
+
+                      <div class="input-field col s12" id="Travel & Transport">
+                        <select multiple id="mTravelAndTransport">
+                          <option value="" disabled selected>Travel & Transport</option>
+                        </select>
+                        <label>Travel & Transport</label>
+                      </div>
+
+                <div class="container">
+                  <div class="input-field col s12">
+                    <select id="selectRadius">
+                      <option value="1609.34">1</option>
+                      <option value="8046.72">5</option>
+                      <option value="16093.4">10</option>
+                      <option value="24140.2">15</option>
+                      <option value="32186.9">20</option>
+                    </select>
+                    <label>Radius in Miles</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col l12">
+                  <input type="text" id="cityName" placeholder="Please Enter A City">
+                  <br>
+                  <br>
+                  <br>
+                  <button class="btn waves-effect waves-light blue-grey darken-1" type="submit" name="action"
+                    id="search">
+                    <i class="material-icons right">search</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          <span>
+
+          </span>
+        </div>
+      </li>
+     
+    </ul>
+
+  
+    </div>
+  
+<div class="container">
+  <div class="row">
+    <section class="col s12 m12" id="weather"></section>
+  </div>
+</div>
+<!-- Results -->
+<div class="container">
+
+<ul class="collapsible expandable s12">
+  <li>
+    <div class="collapsible-header"><i class="material-icons">add_circle</i>Results</div>
+    <div class="collapsible-body"><span>
+ <div class="row">
+   <section class="col s12 m6 l6" id="choices">
+     <div id="activities"></div>
+     <div id="foodType"></div>
+   </section>
+   <section class="col s12 m6 l6" id="decided">
+     <div id="activitiesPicked">
+       <h3>Activities Picked</h3>
+     </div>
+     <div id="foodTypePicked">
+       <h3>Food Options Picked</h3>
+     </div>
+     <div id="processSummary"><button class="btn waves-effect waves-light processVenues" id="processVenue">Produce
+         Venue Summary</button></div>
+   </section>
+ </div>
+      </span>
+    </div>
+  </li>
+</ul>
+
+</div>
+
+
+<div class="container">
+      <ul class="collapsible expandable">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">add_circle</i>Summary</div>
+          <div class="collapsible-body"><span>
+          <div id="resultSummary"></div>
+
+</span>
+</div>
+</li>
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<script src=./assets/js/app.js></script>
+<!-- Compiled and minified JavaScript -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

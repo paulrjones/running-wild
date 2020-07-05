@@ -1,0 +1,118 @@
+header {
+  text-align: center;
+  position: sticky;
+}
+
+img {
+  height: 70px;
+  margin: auto;
+  padding: auto;
+}
+
+body {
+  background-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,h_2059,w_3664,x_0,y_282/f_auto,q_auto,w_1100/v1557172073/shape/mentalfloss/83360-istock-453758149_0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: hard-light;
+  background-position: 100% 95px;
+}
+
+.collapsible-header {
+  font-weight: bold;
+  background: repeating-radial-gradient(
+    circle,
+    lightgreen,
+    lightgreen 10px,
+    aquamarine 10px,
+    aquamarine 20px
+  )
+}
+
+.collapsible-body { 
+  background-image: url("https://image.freepik.com/free-photo/white-toy-airplane-yellow-background-with-copy-space_68196-1367.jpg");
+  background-size: 100%;
+}
+
+.material-icons {
+  margin-left: -50px;
+}
+
+#planDate {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+} 
+
+#ArtsAndEntertainment {
+  margin-left: -50px;
+}
+
+#Events {
+  margin-left: -50px;
+}
+
+#ShopAndService {
+  margin-left: -50px;
+}
+
+#OutdoorsAndRecreation {
+  margin-left: -50px;
+}
+
+#cityName {
+  margin-left: 10px;
+}
+
+.forecastLabel {
+  display: inline-block;
+  font-weight: bold;
+  padding: 0px;
+  width: auto;
+}
+
+.forecastCard {
+  display: inline-block;
+  width: 20%;
+}
+
+
+.cardsArtsAndEntertainment {
+  background-color: aquamarine;
+}
+
+.cardsEvents {
+  background-color: lightblue;
+}
+
+.cardsOutdoorsAndRecreation {
+  background-color: lightgreen;
+}
+
+.cardsTravelAndTransport {
+  background-color: lightpink;
+}
+
+.cardsFoodOptions{
+  background-color:lightsteelblue;
+}
+
+.venueCard{
+width: 60vw;
+display:inline-block;
+}
+
+.card-text {
+  text-align: center;
+  padding: 10px;
+  
+}
+
+@media only screen and (max-width: 425px) {
+  .forecastCard {
+    display: block;
+    width: 100%;
+
+    
+  }
+}
