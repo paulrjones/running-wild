@@ -12,3 +12,5 @@ Web application that helps you plan your weekend.  Utilizing the Foursquare API 
 * Moment.js
 * Openweather API
 * Foursquare API
+
+Deployment Link: http://banana-pudding-35031.herokuapp.com/
